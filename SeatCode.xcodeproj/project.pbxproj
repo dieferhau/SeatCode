@@ -14,6 +14,9 @@
 		F1348D77283F8AD60041E3FC /* SeatCodeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1348D76283F8AD60041E3FC /* SeatCodeTests.swift */; };
 		F1348D81283F8AD60041E3FC /* SeatCodeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1348D80283F8AD60041E3FC /* SeatCodeUITests.swift */; };
 		F1348D83283F8AD60041E3FC /* SeatCodeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1348D82283F8AD60041E3FC /* SeatCodeUITestsLaunchTests.swift */; };
+		F1348D90283F8B1A0041E3FC /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1348D8F283F8B1A0041E3FC /* DetailView.swift */; };
+		F1348D92283F8C750041E3FC /* CharactersVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1348D91283F8C750041E3FC /* CharactersVM.swift */; };
+		F1348D94283F8D410041E3FC /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1348D93283F8D410041E3FC /* Models.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +47,10 @@
 		F1348D7C283F8AD60041E3FC /* SeatCodeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SeatCodeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1348D80283F8AD60041E3FC /* SeatCodeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeatCodeUITests.swift; sourceTree = "<group>"; };
 		F1348D82283F8AD60041E3FC /* SeatCodeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeatCodeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F1348D8F283F8B1A0041E3FC /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		F1348D91283F8C750041E3FC /* CharactersVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersVM.swift; sourceTree = "<group>"; };
+		F1348D93283F8D410041E3FC /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		F1CA3AEC283F94C600C645D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +101,12 @@
 		F1348D64283F8AD20041E3FC /* SeatCode */ = {
 			isa = PBXGroup;
 			children = (
+				F1CA3AEC283F94C600C645D6 /* Info.plist */,
 				F1348D65283F8AD20041E3FC /* SeatCodeApp.swift */,
 				F1348D67283F8AD20041E3FC /* ContentView.swift */,
+				F1348D8F283F8B1A0041E3FC /* DetailView.swift */,
+				F1348D91283F8C750041E3FC /* CharactersVM.swift */,
+				F1348D93283F8D410041E3FC /* Models.swift */,
 				F1348D69283F8AD60041E3FC /* Assets.xcassets */,
 				F1348D6B283F8AD60041E3FC /* Preview Content */,
 			);
@@ -257,8 +268,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1348D92283F8C750041E3FC /* CharactersVM.swift in Sources */,
 				F1348D68283F8AD20041E3FC /* ContentView.swift in Sources */,
+				F1348D90283F8B1A0041E3FC /* DetailView.swift in Sources */,
 				F1348D66283F8AD20041E3FC /* SeatCodeApp.swift in Sources */,
+				F1348D94283F8D410041E3FC /* Models.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -419,6 +433,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"SeatCode/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SeatCode/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -447,6 +462,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"SeatCode/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SeatCode/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
