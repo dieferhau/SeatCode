@@ -17,6 +17,7 @@
 		F1348D90283F8B1A0041E3FC /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1348D8F283F8B1A0041E3FC /* DetailView.swift */; };
 		F1348D92283F8C750041E3FC /* CharactersVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1348D91283F8C750041E3FC /* CharactersVM.swift */; };
 		F1348D94283F8D410041E3FC /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1348D93283F8D410041E3FC /* Models.swift */; };
+		F1CA3AEE2840E85700C645D6 /* CharacterService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CA3AED2840E85700C645D6 /* CharacterService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		F1348D91283F8C750041E3FC /* CharactersVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersVM.swift; sourceTree = "<group>"; };
 		F1348D93283F8D410041E3FC /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 		F1CA3AEC283F94C600C645D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		F1CA3AED2840E85700C645D6 /* CharacterService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,12 +103,10 @@
 		F1348D64283F8AD20041E3FC /* SeatCode */ = {
 			isa = PBXGroup;
 			children = (
+				F1CA3AF12840E89A00C645D6 /* Characters */,
+				F1CA3AF02840E89000C645D6 /* Lifecycle */,
+				F1CA3AEF2840E88800C645D6 /* Views */,
 				F1CA3AEC283F94C600C645D6 /* Info.plist */,
-				F1348D65283F8AD20041E3FC /* SeatCodeApp.swift */,
-				F1348D67283F8AD20041E3FC /* ContentView.swift */,
-				F1348D8F283F8B1A0041E3FC /* DetailView.swift */,
-				F1348D91283F8C750041E3FC /* CharactersVM.swift */,
-				F1348D93283F8D410041E3FC /* Models.swift */,
 				F1348D69283F8AD60041E3FC /* Assets.xcassets */,
 				F1348D6B283F8AD60041E3FC /* Preview Content */,
 			);
@@ -136,6 +136,33 @@
 				F1348D82283F8AD60041E3FC /* SeatCodeUITestsLaunchTests.swift */,
 			);
 			path = SeatCodeUITests;
+			sourceTree = "<group>";
+		};
+		F1CA3AEF2840E88800C645D6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F1348D67283F8AD20041E3FC /* ContentView.swift */,
+				F1348D8F283F8B1A0041E3FC /* DetailView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F1CA3AF02840E89000C645D6 /* Lifecycle */ = {
+			isa = PBXGroup;
+			children = (
+				F1348D65283F8AD20041E3FC /* SeatCodeApp.swift */,
+			);
+			path = Lifecycle;
+			sourceTree = "<group>";
+		};
+		F1CA3AF12840E89A00C645D6 /* Characters */ = {
+			isa = PBXGroup;
+			children = (
+				F1348D91283F8C750041E3FC /* CharactersVM.swift */,
+				F1348D93283F8D410041E3FC /* Models.swift */,
+				F1CA3AED2840E85700C645D6 /* CharacterService.swift */,
+			);
+			path = Characters;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -271,6 +298,7 @@
 				F1348D92283F8C750041E3FC /* CharactersVM.swift in Sources */,
 				F1348D68283F8AD20041E3FC /* ContentView.swift in Sources */,
 				F1348D90283F8B1A0041E3FC /* DetailView.swift in Sources */,
+				F1CA3AEE2840E85700C645D6 /* CharacterService.swift in Sources */,
 				F1348D66283F8AD20041E3FC /* SeatCodeApp.swift in Sources */,
 				F1348D94283F8D410041E3FC /* Models.swift in Sources */,
 			);

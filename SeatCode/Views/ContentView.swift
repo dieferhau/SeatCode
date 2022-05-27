@@ -23,7 +23,6 @@ struct ContentView: View {
                             Color.white.frame(width: 40, height: 40)
                         })
                         Text(hero.name)
-                        
                     }
                 }
             }

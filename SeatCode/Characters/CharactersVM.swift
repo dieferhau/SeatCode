@@ -6,17 +6,17 @@
 //
 
 import Foundation
-import Combine
 
 class CharactersVM: ObservableObject {
     
-    private var cancellable = Set<AnyCancellable>()
-    
     @Published
     var heroes = [Result]()
-    
+
+    //We make this private as it shouldn't be altered outside this class, but make it published cause we want to notify observers of changes.
     @Published
-    var saved: [Int] = []
+    private var saved: [Int] = []
+    
+    var service = CharacterService()
     
     init(){
         if let arr = (UserDefaults.standard.array(forKey: "Saved") ?? []) as? [Int] {
@@ -24,16 +24,16 @@ class CharactersVM: ObservableObject {
         }
     }
     
+    @MainActor
     func fetch(){
-        URLSession.shared.dataTaskPublisher(for: URL(string: "https://gateway.marvel.com:443/v1/public/characters?apikey=c9bea7bed2678e12c5c9414609f35bdd&ts=1&hash=129b4cbd75440e6445c54443e5cfae14")!)
-            .map { $0.data }
-            .decode(type: Welcome.self, decoder: JSONDecoder())
-            .receive(on: DispatchQueue.main)
-            .sink(receiveCompletion: { r in
-                print("EEE \(r)")
-            }, receiveValue: { res in
-                self.heroes = res.data.results
-            }).store(in: &cancellable)
+        Task {
+            do {
+                heroes = try await service.fetch()
+            } catch {
+                print("Error")
+            }
+        }
+            
     }
     
     func saved(id: Int) -> Bool {
@@ -50,5 +50,3 @@ class CharactersVM: ObservableObject {
     }
     
 }
-
-
